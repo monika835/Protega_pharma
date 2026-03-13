@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - npm install
+
+  pre_build:
+    commands:
+      - npm run export
+
+  build:
+    commands:
+      - aws s3 sync --delete ./out/ s3://copay-roxybond-form/
+      - aws cloudfront create-invalidation --distribution-id E1YDZ86VBXZT6W --paths "/*"
+
+artifacts:
+  files:
+    - "**/*"
