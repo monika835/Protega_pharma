@@ -37,7 +37,7 @@ console.log(enrolled, resident);
             <div className="col-12">
               <div className="patient_banner_content">
                 <h1> Eligible patients may save with the ROXYBOND&#8482; Copay Card. </h1>
-                <img src="/images/logo.png" className="img-fluid banner_logo"  alt="banner-logo" />
+                <img src="/images/RoundRoxyBond.png" className="img-fluid banner_logo"  alt="banner-logo" />
               </div>
             </div>
               
@@ -527,7 +527,7 @@ console.log(enrolled, resident);
                     }}
                 >
                     <img
-                    src="/images/protega-pharma-logo.png"
+                    src="/images/10-20-Protega Swich-HR.jpg"
                     alt="Protega Pharma Logo"
                     style={{
                         display: "block",
