@@ -1,6 +1,6 @@
 Directoryindex Disabled
 
-# Redirect traffic to your port 3000
+# Redirect traffic to your port 3001
 RewriteEngine On
 RewriteBase /
-RewriteRule ^(.*)?$ http://127.0.0.1:3000/$1 [P,L]
+RewriteRule ^(.*)?$ http://127.0.0.1:3001/$1 [P,L]
