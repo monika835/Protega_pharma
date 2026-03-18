@@ -36,7 +36,7 @@ console.log(enrolled, resident);
           <div className="row">
             <div className="col-12">
               <div className="patient_banner_content">
-                <h1> Eligible patients may save with the ROXYBOND&#8482; Copay Card. </h1>
+                <h1> Eligible patients may save with the ROXYBOND&#8482; Copay Card.. </h1>
                 <img src="/images/RoundRoxyBond.png" className="img-fluid banner_logo"  alt="banner-logo" />
               </div>
             </div>
