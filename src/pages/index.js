@@ -656,7 +656,7 @@ console.log(enrolled, resident);
                   Pharmacies needing assistance with processing this copay card, please contact the Pharmacy Helpdesk at{" "}
                   <a href="tel:630-450-8938">630-450-8938</a>.
                 </p>
-                <p>&copy;2025 Protega Pharma. All rights reserved.</p>
+                <p>&copy;2026 Protega Pharma. All rights reserved.</p>
               </div>
             </div>
           </div>
