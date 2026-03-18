@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 //test push2
 export default function homestaging() {
 
-  const [enrolled, setEnrolled] = useState(null);
+    const [enrolled, setEnrolled] = useState(null);
   const [resident, setResident] = useState(null);
   const [modal1, setModal1] = useState(false);
 console.log(enrolled, resident);
@@ -27,35 +27,29 @@ console.log(enrolled, resident);
       </Head>
       <div className="top-bar-container">
         <div className="top-bar">
-          <div className="top-bar-1"></div>
-          <div className="top-bar-2"></div>
-          <div className="top-bar-3"></div>
-          <div className="top-bar-4"></div>
-          <div className="top-bar-5"></div>
+          
         </div>
       </div>
-      <div className="notice-container">
-        <div className="container">
+      
+
+      <div className="patient-banner-container">
+        <div className="container">   
           <div className="row">
             <div className="col-12">
-              <strong>
-                Please scroll for Indication, Limitations of Use, and Important
-                Safety Information including{" "}
-                <span className="nobr">BOXED WARNING</span>
-              </strong>
+              <div className="patient_banner_content">
+                <h1> Eligible patients may save with the ROXYBOND&#8482; Copay Card...  </h1>
+                <img src="/images/RoundRoxyBond.png" className="img-fluid banner_logo"  alt="banner-logo" />
+              </div>
             </div>
+              
+
+            </div>  
           </div>
         </div>
-      </div>
-      <div className="copay-card-container" style={{ marginLeft: 30 }}>
+
+      <div className="copay-card-container" style={{ marginLeft: 30 , marginTop: 40}}>
         <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1>
-                Eligible patients may save with the ROXYBOND&#8482; Copay Card.
-              </h1>
-            </div>
-          </div>
+          
           <div className="row" style={{ marginLeft: -30 }}>
             <div className="col-12 col-md-12 copay-card-column">
               <img
@@ -64,117 +58,41 @@ console.log(enrolled, resident);
                 src="/images/CopayCardMar2026.png"
                 alt="ROXYBOND Copay Card"
               />
-              <p>
-                If you have any questions, please contact the Pharmacy Helpdesk at {""}
-                <span className="nobr">
-                  <a href="tel:630-450-8938">630-450-8938</a>.
-                </span>
-              </p>
-              {/* <img
-                className="protega-cares-logo"
-                src="/images/protega-cares-logo.png"
-                alt="Protega Cares Logo"
-              /> */}
+    
             </div>
-            <div className="col-12 col-md-12 question-container">
-              <h2>
-                Pay as little as $10*{" "}
-                <span className="nobr">for each prescription</span>
-              </h2>
-
-              <p>
-                Are you enrolled in any state-, federal-, or government-funded
-                medical health insurance or prescription benefit program
-                (including, but not limited to, Medicare, Medicaid, Medigap, VA,
-                TRICARE, DOD, or CHAMPUS)?
-              </p>
-              {/* @Html.HiddenFor(model => model.IsMedicare) */}
-              <div>
-                <label className="radio">
-                  <input
-                    type="radio"
-                    checked={enrolled === false}
-                    value="No"
-                    onChange={(_) => setEnrolled(false)}
-                  />
-                  <span style={{ fontWeight: "normal" }}>No</span>
-                </label>
-              </div>
-              <div>
-                <label className="radio">
-                  <input
-                    type="radio"
-                    checked={enrolled === true}
-                    value="Yes"
-                    onChange={(_) => setEnrolled(true)}
-                  />
-                  <span style={{ fontWeight: "normal" }}>Yes</span>
-                </label>
-              </div>
-              <p>Are you a US resident and at least 18 years old? </p>
-              {/* @Html.HiddenFor(model => model.IsResident) */}
-              <div>
-                <label className="radio">
-                  <input
-                    type="radio"
-                    checked={resident === false}
-                    value="No"
-                    onChange={(_) => setResident(false)}
-                  />
-                  <span style={{ fontWeight: "normal" }}>No</span>
-                </label>
-              </div>
-              <div>
-                <label className="radio">
-                  <input
-                    type="radio"
-                    checked={resident === true}
-                    value="Yes"
-                    onChange={(_) => setResident(true)}
-                  />
-                  <span style={{ fontWeight: "normal" }}>Yes</span>
-                </label>
-              </div>
-              {enrolled === true || resident === false ? (
-                <p className="message-container">
-                  We're sorry, but you are not eligible for the ROXYBOND Copay
-                  Card program. Please feel free to contact ROXYBOND support if
-                  you have any questions related to copay eligibility by{" "}
-                  <span className="nobr">
-                    calling <a href="tel:630-450-8938">630-450-8938</a>.
-                  </span>
-                </p>
-              ) : (
-                <p className="download-button-container">
-                  <button
-                    className={downloadButtonClasses.join(" ")}
-                    disabled={!enabled}
-                    onClick={(_) =>
-                      (window.location.href = "/public/pdfs/Copay-Car-Downloadable-v25-Oct-25.pdf")
-                    }
-                  >
-                    Download a <span className="nobr">Copay Card</span>
-                  </button>
-                </p>
-              )}
-            </div>
+            
           </div>
-          <div className="row">
-            <div className="col-12 asterisk-copy">
-              <p>
-                *For eligible commercially insured patients. Maximum savings
-                limit applies; patient out-of-pocket expense may vary.
-                <br />
-                <a href="#" onClick={(_) => setModal1(true)}>
-                  Please see Program Terms, Conditions, and Eligibility
-                  Criteria, which include{" "}
-                  <span className="nobr">additional exclusions.</span>
-                </a>
-              </p>
+          
+        </div>
+      </div>
+      
+       <div className="black-box-container">
+        <div className="container">
+          <div className="row orange-box">
+            <div className="col-12">
+                <h3 className="ucase">PHARMACIST INSTRUCTIONS: SUBMITTING CLAIM</h3>
+                <p> REMOVE ANY DISCOUNT CARDS FROM TRANSACTION. USING DISCOUNT CARDS WITH COPAY CARD
+                    WILL RESULT IN A BENEFIT REJECTION AND POSSIBLY A HIGHER COST FOR THE PATIENT.</p>
+              <ol>
+                  <li>Submit claim to patient’s insurance first. </li>
+                  <li>Then submit a secondary claim using the copay card information as a coordination of benefits using <strong>OCC 8. </strong></li>
+              </ol>
+
+              <strong>If the patient’s insurance requires a Prior Authorization:</strong>
+              <ul>
+                  <li>Returns a reject 75, or  </li>
+                  <li>Drug not covered reject 70</li>
+              </ul>
+              <ol>
+                  <li><strong>Initiate Prior Authorization with prescriber immediately</strong> Copay card allows only one 30-day script per calendar year while PA processes, then up to prescription maximum until annual maximum is reached. </li>
+                  <li>Submit the secondary claim using the copay card information as a coordination of benefits using <strong>OCC 8. </strong></li>
+              </ol>
+              <h3 className="ucase">Pharmacies needing assistance with processing this copay card, please contact the Pharmacy Helpdesk at <a href="tel:630-450-8938">630-450-8938</a>.</h3>
             </div>
           </div>
         </div>
       </div>
+      
       <div className="info-container" style={{ marginLeft: 20 }}>
         <div className="container">
           <div className="row">
@@ -336,24 +254,38 @@ console.log(enrolled, resident);
               </ul>
             </div>
           </div>
+          
           <div className="row">
             <div className="col-12">
               <h3>
-                Before taking ROXYBOND, tell your healthcare provider if you
-                have a history of:
+                Before taking ROXYBOND, tell your healthcare provider if you have a history of:
               </h3>
-              <ul>
-                <li>head injury, seizures</li>
-                <li>liver, kidney, thyroid problems</li>
-                <li>problems urinating</li>
-                <li>pancreas or gallbladder problems</li>
-                <li>
-                  abuse of street or prescription drugs, alcohol addiction,
-                  opioid overdose or mental health problems.
-                </li>
-              </ul>
+              <div className="row">
+                {/* First two columns for first 4 items */}
+                <div className="col-md-6">
+                  <ul style={{ marginBottom: "0" }}>
+                    <li>head injury, seizures</li>
+                    <li>liver, kidney, thyroid problems</li>
+                  </ul>
+                </div>
+                <div className="col-md-6">
+                  <ul style={{ marginBottom: "0" }}>
+                    <li>problems urinating</li>
+                    <li>pancreas or gallbladder problems</li>
+                  </ul>
+                </div>
+                {/* Full width for last item */}
+                <div className="col-12">
+                  <ul style={{ marginTop: "0", marginBottom: "1rem", paddingLeft: "3.5rem" }}>
+                    <li>
+                      abuse of street or prescription drugs, alcohol addiction, opioid overdose or mental health problems.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+
           <div className="row">
             <div className="col-12">
               <h3>Tell your healthcare provider if you are:</h3>
@@ -464,20 +396,17 @@ console.log(enrolled, resident);
           </div>
           <div className="row">
             <div className="col-12">
-              <h3>
-                Get emergency medical help or call 911 right away if you have:
-              </h3>
+              <h3>Get emergency medical help or call 911 right away if you have:</h3>
               <ul>
                 <li>
-                  trouble breathing, shortness of breath, fast heartbeat, chest
-                  pain, swelling of your face, tongue, or throat, extreme
-                  drowsiness, light-headedness when changing positions, feeling
-                  faint, agitation, high body temperature, trouble walking,
-                  stiff muscles, or mental changes such as confusion.
+                  trouble breathing, shortness of breath, fast heartbeat, chest pain, swelling of your face,tongue, or throat, extreme drowsiness, light-headedness when changing positions, feeling
+                  faint, agitation, high body temperature, trouble walking, stiff muscles, or mental changes
+                  such as confusion.
                 </li>
               </ul>
             </div>
           </div>
+
           <div className="row">
             <div className="col-12">
               <p>
@@ -495,33 +424,83 @@ console.log(enrolled, resident);
               </p>
             </div>
           </div>
+
+          <div className="row">
+          <div className="col-12">
+            <h3>
+              ROXYBOND™ (oxycodone hydrochloride) COPAY CARD TERMS AND CONDITIONS
+            </h3>
+            <p>
+              The ROXYBOND Copay Card Program (the “Card”) may cover a portion of eligible out-of-pocket costs of patients' ROXYBOND prescriptions. Patient eligibility for the Card is subject to the following terms and conditions:
+            </p>
+            <ul>
+              <li>
+                The Card may only be used by eligible residents of the U.S., Puerto Rico, or U.S. territories at participating eligible pharmacies located in the U.S., Puerto Rico, or U.S. territories. Card user must be at least 18 years of age.
+              </li>
+              <li>
+                The Card will cover 65% of the out-of-pocket costs of an eligible patient’s ROXYBOND prescriptions (Card benefit is calculated at the time of use and is subject to vary). Annual maximum benefit of $8,500 applies.
+              </li>
+              <li>
+                The Card is only available for use with a valid prescription. The Card has no cash value, is not transferable, may not be reproduced, and may not be sold, purchased, traded, or offered for sale, purchase, or trade.
+              </li>
+              <li>
+                THIS CARD IS NOT INSURANCE AND IS NOT INTENDED TO BE A SUBSTITUTE FOR INSURANCE. The Card is not valid for prescriptions eligible for full reimbursement by insurance plans or any other pharmacy benefit or assistance programs, and it will not reimburse any payments made by a Flexible Spending Account (“FSA”), Health Savings Account (“HSA”), or Health Reimbursement Account (“HRA”).
+              </li>
+              <li>
+                This Card is only valid for use by patients with commercial insurance. THE CARD IS NOT VALID FOR PRESCRIPTIONS THAT ARE ELIGIBLE TO BE REIMBURSED, IN WHOLE OR IN PART, BY:
+                <ul>
+                  <li>
+                    ANY FEDERAL HEALTH CARE PROGRAM (AS DEFINED AT 42 U.S.C. §1320A-7B(F)), INCLUDING MEDICAID, MEDICARE (INCLUDING ANY MEDICARE ADVANTAGE OR MEDICARE PART D PLAN, WHICH INCLUDES MEDICARE PART D ENROLLEES IN THE PRESCRIPTION DRUG COVERAGE GAP), TRICARE, CHAMPUS, PUERTO RICO GOVERNMENT HEALTH INSURANCE PLAN, OR ANY OTHER STATE OR FEDERAL HEALTH CARE PROGRAM;
+                  </li>
+                  <li>
+                    MEDICARE-ELIGIBLE PATIENTS ENROLLED IN AN EMPLOYER-SPONSORED RETIREE HEALTH PLAN OR PRESCRIPTION DRUG PLAN;
+                  </li>
+                  <li>CASH-PAYING PATIENTS;</li>
+                  <li>PATIENTS RESIDING IN A STATE WHERE THE USE OF THE CARD IS PROHIBITED BY LAW OR REGULATION.</li>
+                </ul>
+              </li>
+              <li>
+                Submit claim to patient’s insurance first, then submit a secondary claim using the copay card information as a coordination of benefits using OCC 8. If the patient’s insurance requires a Prior Authorization and returns a reject 75, or drug not covered reject 70, submit a secondary claim using the copay card information as a coordination of benefits using OCC 3.
+              </li>
+              <li>
+                Patient, pharmacist, and prescriber agree not to submit a claim for reimbursement for any value conveyed by Card. Patient and pharmacist must each individually report receipt of Card to any insurer, health plan, or any other party that covers or reimburses any part of the prescription filled using this Card, as required by law, regulation, or company policy.
+              </li>
+              <li>
+                Certain information necessary to facilitate the use of the Card will be shared with Protega Pharma and its affiliates.
+              </li>
+              <li>Card is not valid in the state of Massachusetts.</li>
+              <li>Card is void where taxed or where prohibited or restricted by law.</li>
+              <li>Protega Pharma reserves the right to terminate the Card program or to rescind, revoke, or amend this offer without notice.</li>
+            </ul>
+          </div>
+        </div>
+
           <div className="row">
             <div className="col-12">
               <p>
                 <strong>
                   Please see additional Important Safety Information, and full{" "}
-                  <a
-                    href="https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=72398542-8e0a-47b2-afeb-9ca5a1f15083&type=display"
-                    target="_blank"
-                  >
-                    Prescribing Information
-                  </a>
-                  , including BOXED WARNINGS and{" "}
-                  <span className="nobr">
-                    <a
-                      href="https://dailymed.nlm.nih.gov/dailymed/medguide.cfm?setid=72398542-8e0a-47b2-afeb-9ca5a1f15083"
-                      target="_blank"
-                    >
-                      Medication Guide
-                    </a>
-                  </span>{" "}
-                  at{" "}
+                  <span className="nobr">Prescribing Information</span>, including BOXED
+                  WARNINGS and <span className="nobr">Medication Guide</span> at{" "}
                   <a href="https://protegapharma.com" target="_blank">
-                    www.ProtegaPharma.com
+                    www.protegapharma.com
                   </a>{" "}
-                  prior to taking ROXYBOND. Speak with your healthcare provider
-                  if you have additional questions{" "}
-                  <span className="nobr">about ROXYBOND.</span>
+                  prior to taking ROXYBOND. Speak with your healthcare provider if you have
+                  additional questions about ROXYBOND.
+                </strong>
+
+              </p>
+              <p>
+                <strong>
+                  You are encouraged to report negative side effects of prescription drugs to the FDA. 
+                  Visit <a href="https://www.fda.gov/safety/medwatch" target="_blank" rel="noopener noreferrer">
+                    MedWatch
+                  </a>{" "}or call 1-800-FDA-1088. To report SUSPECTED ADVERSE REACTIONS, contact{" "}
+                  <span className="nobr">Protega Pharmaceuticals Inc.</span> at 1-844-798-3610,{" "}
+                  <span className="nobr">FDA</span> at 1-800-FDA-1088, or{" "}
+                  <a href="https://www.fda.gov/safety" target="_blank" rel="noopener noreferrer">
+                    www.fda.gov/safety
+                  </a>.
                 </strong>
               </p>
             </div>
@@ -549,7 +528,7 @@ console.log(enrolled, resident);
                     }}
                 >
                     <img
-                    src="/images/protega-pharma-logo.png"
+                    src="/images/10-20-Protega Swich-HR.jpg"
                     alt="Protega Pharma Logo"
                     style={{
                         display: "block",
@@ -564,19 +543,16 @@ console.log(enrolled, resident);
                 <div className="col-12 col-lg-12">
                     <p
                     style={{
-                        textAlign: "center",  
+                        textAlign: "right",  
                         margin: "0", 
                         lineHeight: "1.5",
                     }}
                     >
-                    &copy;2025 Protega Pharmaceuticals Inc.
+                    &copy;2026 Protega Pharmaceuticals Inc. ROXYBOND and the ROXYBOND 
+
                     <br />
-                    ROXYBOND, the ROXYBOND logo, and the Protega Pharma logo are
-                    trademarks of{" "}
-                    <span className="nobr">Protega Pharmaceuticals Inc.</span>
-                    <br />
-                    PM-FM-1008 r9 Oct 25
-                    </p>
+                    logo are trademarks of Protega Pharmaceuticals Inc. PM-FM-1010 r9 Mar 2026 
+                      </p>
                 </div>
                 </div>
             </div>
@@ -667,5 +643,3 @@ console.log(enrolled, resident);
   );
 }
 
- 
- 

@@ -356,7 +356,7 @@ strong {
 
 .top-bar-2 {
   width: 24px;
-  background-image: url(/images/topbar-left.png);
+  background-image: url(/images/output-onlinepngtools-left.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -365,7 +365,7 @@ strong {
 .top-bar-3 {
   flex-grow: 100;
   max-width: 1050px;
-  background-image: url(/images/topbar-middle.png);
+  background-image: url(/images/output-onlinepngtools.png);
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
@@ -373,7 +373,7 @@ strong {
 
 .top-bar-4 {
   width: 24px;
-  background-image: url(/images/topbar-right.png);
+  background-image: url(/images/output-onlinepngtools-right.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -382,7 +382,7 @@ strong {
 .top-bar-5 {
   flex-grow: 1;
   max-width: 1050px;
-  background-image: url(/images/topbar-middle.png);
+  background-image: url(/images/output-onlinepngtools.png);
   background-repeat: repeat-x;
   background-position: left;
   background-position-x: left;
@@ -650,7 +650,7 @@ button.download-button.disabled {
 
 button.download-button.active,
 button.print-button.active {
-  background-color: #26988a;
+  background-color: #eb6d23;
   color: #fff;
   cursor: pointer;
 }
@@ -690,7 +690,7 @@ button.print-button.active:hover {
   max-height: 90vh;
   padding: 0 30px 10px;
   box-sizing: border-box;
-  background-color: #cceaf6;
+  background-color: #fbdac7;
   overflow-y: auto;
 }
 
@@ -9489,7 +9489,7 @@ strong {
 
 .top-bar-2 {
   width: 24px;
-  background-image: url(/images/topbar-left.png);
+  background-image: url(/images//output-onlinepngtools-left.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -9498,7 +9498,7 @@ strong {
 .top-bar-3 {
   flex-grow: 100;
   max-width: 1050px;
-  background-image: url(/images/topbar-middle.png);
+  background-image: url(/images//output-onlinepngtools.png);
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
@@ -9506,7 +9506,7 @@ strong {
 
 .top-bar-4 {
   width: 24px;
-  background-image: url(/images/topbar-right.png);
+  background-image: url(/images//output-onlinepngtools-right.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -9515,7 +9515,7 @@ strong {
 .top-bar-5 {
   flex-grow: 1;
   max-width: 1050px;
-  background-image: url(/images/topbar-middle.png);
+  /* background-image: url(/images/t/output-onlinepngtools.png); */
   background-repeat: repeat-x;
   background-position: left;
   background-position-x: left;
@@ -9765,7 +9765,7 @@ button.download-button.disabled {
 
 button.download-button.active,
 button.print-button.active {
-  background-color: #26988a;
+  background-color: #eb6d23;
   color: #fff;
   cursor: pointer;
 }
@@ -9803,7 +9803,7 @@ button.print-button.active:hover {
   max-height: 90vh;
   padding: 0 30px 10px;
   box-sizing: border-box;
-  background-color: #cceaf6;
+  background-color: #fbdac7;
   overflow-y: auto;
 }
 
@@ -9847,9 +9847,6 @@ button.print-button.active:hover {
 
 }
 
-.top-bar-container {
- margin-top: 10px;
-}
 .black-box-container .orange-box {
     padding: 0px 10px;
     border: 2px solid #eb6e24;
@@ -10015,4 +10012,8 @@ button.print-button.active:hover {
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
+}
+
+.top-heading{
+  color: #1a3664;
 }
