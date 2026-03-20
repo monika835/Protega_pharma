@@ -303,8 +303,7 @@ console.log(enrolled, resident);
                   medicine for the emergency treatment of an opioid overdose.
                 </li>
                 <li>
-                  Taking ROXYBOND with other opioid medicines, benzodiazepines,
-                  alcohol, or other central nervous system depressants
+                  Taking ROXYBOND with other opioid medicines, benzodiazepines, gabapentinoids (gabapentin or pregabalin), alcohol, or other central nervous system depressants
                   (including street drugs) can cause severe drowsiness,
                   decreased awareness, breathing problems, coma, and death.
                 </li>
