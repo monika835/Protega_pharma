@@ -547,7 +547,7 @@ console.log(enrolled, resident);
                     }}
                 >
                     <img
-                    src="/images/protega-pharma-logo.png"
+                    src="/images/NEW-Protega-Pharmaceuticals.jpg"
                     alt="Protega Pharma Logo"
                     style={{
                         display: "block",
@@ -573,7 +573,7 @@ console.log(enrolled, resident);
                     trademarks of{" "}
                     <span className="nobr">Protega Pharmaceuticals Inc.</span>
                     <br />
-                    PM-FM-1008 r10 Mar 25
+                    PM-FM-1008 r10 Mar 26
                     </p>
                 </div>
                 </div>
