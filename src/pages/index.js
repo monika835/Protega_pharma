@@ -573,7 +573,7 @@ console.log(enrolled, resident);
                     trademarks of{" "}
                     <span className="nobr">Protega Pharmaceuticals Inc.</span>
                     <br />
-                    PM-FM-1008 r10 Mar 26
+                    PM-FM-1008 r10 Jun 26
                     </p>
                 </div>
                 </div>
