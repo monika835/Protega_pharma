@@ -149,7 +149,7 @@ console.log(enrolled, resident);
                     className={downloadButtonClasses.join(" ")}
                     disabled={!enabled}
                     onClick={(_) =>
-                      (window.location.href = "/pdfs/Copay-Card-Downloadable-v26-Mar-26.pdf")
+                      (window.location.href = "/pdfs/Copay-Card-Downloadable-v27-Jun-26.pdf")
                     }
                   >
                     Download a <span className="nobr">Copay Card</span>
