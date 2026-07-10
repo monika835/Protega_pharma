@@ -543,6 +543,7 @@ console.log(enrolled, resident);
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    flex-direction,
                     marginBottom: "10px",
                     }}
                 >
