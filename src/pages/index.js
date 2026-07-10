@@ -51,7 +51,7 @@ console.log(enrolled, resident);
           <div className="row">
             <div className="col-12">
               <h1 className="top-heading">
-                Eligible patients may save with the ROXYBOND&#8482; Copay Card.
+                Eligible patients may save with the ROXYBOND&#8482; Copay Card...
               </h1>
             </div>
           </div>
