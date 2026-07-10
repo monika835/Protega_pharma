@@ -560,7 +560,7 @@ console.log(enrolled, resident);
                     />
 
                     <p>
-                        <a href="/privacy-policy">Privacy Policy</a>
+                        <a href="https://protegapharma.com/privacy-policy/" target="blank">Privacy Policy</a>
                     </p>
                 </div>
 
