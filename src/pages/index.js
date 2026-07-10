@@ -557,6 +557,10 @@ console.log(enrolled, resident);
                         marginBottom:"30px"
                     }}
                     />
+
+                    <p>
+                        <a href="/privacy-policy">Privacy Policy</a>
+                    </p>
                 </div>
 
                 <div className="col-12 col-lg-12">
