@@ -1154,6 +1154,15 @@ th {
     url(/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/Roboto-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .glyphicon {
   position: relative;
   top: 1px;

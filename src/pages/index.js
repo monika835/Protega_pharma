@@ -51,7 +51,7 @@ console.log(enrolled, resident);
           <div className="row">
             <div className="col-12">
               <h1 className="top-heading">
-                Eligible patients may save with the ROXYBOND&#8482; Copay Card.
+                Eligible patients may save with the ROXYBOND&#8482; Copay Card...
               </h1>
             </div>
           </div>
@@ -149,7 +149,7 @@ console.log(enrolled, resident);
                     className={downloadButtonClasses.join(" ")}
                     disabled={!enabled}
                     onClick={(_) =>
-                      (window.location.href = "/pdfs/Copay-Card-Downloadable-v26-Mar-26.pdf")
+                      (window.location.href = "/pdfs/Copay-Card-Downloadable-v27-Jun-26.pdf")
                     }
                   >
                     Download a <span className="nobr">Copay Card</span>
@@ -543,6 +543,7 @@ console.log(enrolled, resident);
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    flexDirection: "column",
                     marginBottom: "10px",
                     }}
                 >
@@ -557,6 +558,23 @@ console.log(enrolled, resident);
                         marginBottom:"30px"
                     }}
                     />
+                     
+                     <div style={{ 
+                      textAlign: "center",
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: "20px", // space between the links
+                      flexWrap: "wrap" // allows wrapping on smaller screens
+                      
+                      }}>
+                      <p>
+                        <a href="https://protegapharma.com/privacy-policy/" target="blank">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a href="https://protegapharma.com/terms-of-use/" target="blank">Terms of Use</a>
+                    </p>
+                     </div>
+                    
                 </div>
 
                 <div className="col-12 col-lg-12">
@@ -573,7 +591,7 @@ console.log(enrolled, resident);
                     trademarks of{" "}
                     <span className="nobr">Protega Pharmaceuticals Inc.</span>
                     <br />
-                    PM-FM-1008 r10 Mar 26
+                    PM-FM-1008 r10 Jun 26
                     </p>
                 </div>
                 </div>
@@ -631,7 +649,7 @@ console.log(enrolled, resident);
                     </ul>
                   </li>
                   <li>
-                    Submit claim to patient's insurance first, then submit a secondary claim using the copay card information as a coordination of benefits using OCC 8. If the patient's insurance requires a Prior Authorization and returns a reject 75, or drug not covered reject 70, submit a secondary claim using the copay card information as a coordination of benefits using OCC 3. 
+                    Submit claim to patient's insurance first, then submit a secondary claim using the copay card information as a coordination of benefits using OCC 8. The Card cannot be used for claims rejected by the patient's insurance, including Prior Authorization required (reject 75) or drug not covered (reject 70). 
                   </li>
                   <li>
                     Patient, pharmacist, and prescriber agree not to submit a claim for reimbursement for any value conveyed by Card. Patient and pharmacist must
